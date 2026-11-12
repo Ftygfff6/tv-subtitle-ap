@@ -51,7 +51,7 @@ jobs:
         mv cmdline-tools/* $ANDROID_HOME/cmdline-tools/latest/
         rm cmdline-tools.zip
         yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_HOME --licenses
-        $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_HOME "platform-tools" "platforms;android-33" "build-tools;33.0.0"
+        $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_HOME "platform-tools" "platforms;android-33" "build-tools;33.0.0" "build-tools;37.0.0"
 
     - name: Install Python Build Tools and Buildozer
       run: |
