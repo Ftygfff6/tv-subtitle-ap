@@ -9,6 +9,12 @@ package.name = gamesubtitle
 # (str) Package domain (needed for android packaging)
 package.domain = org.overlay
 
+# (str) Source where the app lives
+source.dir = .
+
+# (str) Application versioning
+version = 1.0
+
 # (list) Source files to include (let it empty to include all files)
 source.include_exts = py,png,jpg,kv,atlas
 
@@ -16,20 +22,12 @@ source.include_exts = py,png,jpg,kv,atlas
 source.include_patterns = assets/*,images/*.png
 
 # (list) Application requirements
-# تأكد من تضمين مكتبات بايثون ومعالجة النصوص العربية
 requirements = python3,kivy,arabic-reshaper,python-bidi,setuptools
-
-# (str) Presplash of the application
-#presplash.filename = %(source.dir)s/data/presplash.png
-
-# (str) Icon of the application
-#icon.filename = %(source.dir)s/data/icon.png
 
 # (list) Supported orientations
 orientation = portrait
 
 # (list) The permissions to grant to your application
-# إضافة صلاحية عرض الشاشة فوق التطبيقات الأخرى (System Alert Window)
 android.permissions = SYSTEM_ALERT_WINDOW
 
 # (int) Target Android API, should be as high as possible.
