@@ -36,11 +36,11 @@ android.api = 33
 # (int) Minimum API your APK will support.
 android.min_api = 21
 
-# (int) Android SDK version to use
-android.sdk = 33
-
 # (str) Android NDK version to use
 android.ndk = 25b
+
+# (str) Android build tools version to use
+android.build_tools_version = 33.0.0
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
 android.private_storage = True
